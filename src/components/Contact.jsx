@@ -67,7 +67,7 @@ const Contact = () => {
                   </div>
                   <div className='flex flex-col'>
                     <label className='uppercase text-sm py-2'>{t('Form_Phone')}</label>
-                    <input className='border-2 rounded-lg p-2 flex border-none dark:opacity-90 focus:outline-none focus:ring focus:border-[#131313]' pattern="[0-9]{10}" maxLength="10" type='text' name='phone' placeholder={t('Form_Phone')} autoComplete='off' required />
+                    <input className='border-2 rounded-lg p-2 flex border-none dark:opacity-90 focus:outline-none focus:ring focus:border-[#131313]' pattern="[\+]\d{2}\d{3}\d{3}\d{4}" maxLength="13" type='text' name='phone' placeholder='+380XXXXXXX' autoComplete='off' required />
                   </div>
                 </div>
 
@@ -78,7 +78,7 @@ const Contact = () => {
 
                 <div className='flex flex-col py-2'>
                   <label className='uppercase text-sm py-2'>{t('Form_Message')}</label>
-                  <textarea className='border-2 rounded-lg p-3 border-none dark:opacity-90 focus:outline-none focus:ring focus:border-[#131313]' name='message' rows='6' required></textarea>
+                  <textarea className='border-2 rounded-lg p-3 border-none dark:opacity-90 focus:outline-none focus:ring focus:border-[#131313]' name='message' placeholder='' rows='6' required></textarea>
                 </div>
                 <button className='w-full p-4 mt-4'>{t('Form_Button')}</button>
               </form>
